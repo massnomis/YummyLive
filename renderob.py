@@ -6,6 +6,12 @@ import uuid
 import plotly.express as px
 import plotly.graph_objects as go
 import time
+import base64
+
+
+
+
+
 st.set_page_config(layout="wide")
 st.title('ABC/USD Order Book')
 
@@ -28,7 +34,6 @@ fig = go.Figure(data=[
 fig.update_layout(barmode='group')
 
 st.plotly_chart(fig, use_container_width=True)
-import base64
 
 # ...
 
